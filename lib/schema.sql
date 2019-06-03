@@ -7,23 +7,23 @@ CREATE TABLE series
 
 INSERT INTO subgenres
   (id INTEGER PRIMARY KEY,
-    name);
+    name TEXT);
 
 INSERT INTO authors
   (id INTEGER PRIMARY KEY,
-    name);
+    name TEXT);
 
 INSERT INTO books
   (id INTEGER PRIMARY KEY,
-    title,
+    title TEXT,
     year INTEGER,
     series_id INTEGER);
 
 INSERT INTO characters
   (id INTEGER PRIMARY KEY,
-    name,
-    motto,
-    species,
+    name TEXT,
+    motto TEXT,
+    species TEXT,
     author_id INTEGER,
     series_id INTEGER);
 
