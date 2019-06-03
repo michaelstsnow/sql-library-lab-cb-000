@@ -9,7 +9,7 @@ end
 def select_name_and_motto_of_char_with_longest_motto
   "SELECT name,motto
   FROM characters
-  HAVING LEN(motto)=MAX(LEN(motto))"
+  WHERE LEN(motto)=MAX(LEN(motto))"
 end
 
 
