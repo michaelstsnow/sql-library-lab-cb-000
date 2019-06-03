@@ -19,6 +19,15 @@ INSERT INTO books
     year,
     series_id);
 
-INSERT INTO characters (id, name, motto, species, author_id, series_id);
+INSERT INTO characters
+  (id INTEGER PRIMARY KEY,
+    name,
+    motto,
+    species,
+    author_id,
+    series_id);
 
-INSERT INTO character_books (id, book_id, character_id);
+INSERT INTO character_books
+(id INTEGER PRIMARY KEY,
+  book_id,
+  character_id);
