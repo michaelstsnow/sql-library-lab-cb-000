@@ -5,24 +5,24 @@ CREATE TABLE series
     subgenre_id INTEGER
   );
 
-INSERT INTO subgenres
+CREATE TABLE subgenres
   (id INTEGER PRIMARY KEY,
     name TEXT
   );
 
-INSERT INTO authors
+CREATE TABLE authors
   (id INTEGER PRIMARY KEY,
     name TEXT
   );
 
-INSERT INTO books
+CREATE TABLE books
   (id INTEGER PRIMARY KEY,
     title TEXT,
     year INTEGER,
     series_id INTEGER
   );
 
-INSERT INTO characters
+CREATE TABLE characters
   (id INTEGER PRIMARY KEY,
     name TEXT,
     motto TEXT,
@@ -31,7 +31,7 @@ INSERT INTO characters
     series_id INTEGER
   );
 
-INSERT INTO character_books
+CREATE TABLE character_books
 (id INTEGER PRIMARY KEY,
   book_id INTEGER,
   character_id INTEGER
