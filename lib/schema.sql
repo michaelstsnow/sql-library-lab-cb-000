@@ -1,15 +1,23 @@
 CREATE TABLE series
-  (id,
+  (id INTEGER PRIMARY KEY,
     title,
     author_id,
     subgenre_id
   );
 
-INSERT INTO subgenres (id, name);
+INSERT INTO subgenres
+  (id INTEGER PRIMARY KEY,
+    name);
 
-INSERT INTO authors (id, name);
+INSERT INTO authors
+  (id INTEGER PRIMARY KEY,
+    name);
 
-INSERT INTO books (id, title, year, series_id);
+INSERT INTO books
+  (id INTEGER PRIMARY KEY,
+    title,
+    year,
+    series_id);
 
 INSERT INTO characters (id, name, motto, species, author_id, series_id);
 
